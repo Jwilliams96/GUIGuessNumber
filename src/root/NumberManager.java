@@ -30,4 +30,33 @@ public class NumberManager {
             throw new IllegalArgumentException();
         }
     }
+
+    @Override
+    public int hashCode() {
+        int hash = 3;
+        hash = 41 * hash + this.correctNumber;
+        return hash;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final NumberManager other = (NumberManager) obj;
+        if (this.correctNumber != other.correctNumber) {
+            return false;
+        }
+        return true;
+    }
+
+    @Override
+    public String toString() {
+        return "The correct number is:" + correctNumber;
+    }
+    
+    
 }
