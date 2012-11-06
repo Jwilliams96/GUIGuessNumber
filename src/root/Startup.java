@@ -105,12 +105,12 @@ public class Startup extends javax.swing.JFrame {
 
             switch (thisGuess.checkValue(valueToCheck)) {
                 
-                case tooHigh:
+                case TOO_HIGH:
                     
                     JOptionPane.showMessageDialog(null, toHighValue);
                     break;
                     
-                case tooLow:
+                case TOO_LOW:
                     
                     JOptionPane.showMessageDialog(null, toLowValue);
                     break;

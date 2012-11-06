@@ -18,13 +18,13 @@ public class NumberManager {
     public NumberValues checkValue(int value) {
         try {
             if (value > correctNumber) {
-                return NumberValues.tooHigh;
+                return NumberValues.TOO_HIGH;
             } else if (value == correctNumber) {
-                return NumberValues.correctValue;
+                return NumberValues.CORRECT_VALUE;
             }else if (value > 10 || value < 0){
                 throw new IllegalArgumentException();
             } else {
-                return NumberValues.tooLow;
+                return NumberValues.TOO_LOW;
             } 
         } catch (IllegalArgumentException e) {
             throw new IllegalArgumentException();

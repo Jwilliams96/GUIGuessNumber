@@ -9,5 +9,5 @@ package root;
  * @author Jwilliams96
  */
 public enum NumberValues {
-    tooHigh, tooLow, correctValue
+    TOO_HIGH, TOO_LOW, CORRECT_VALUE
 }
